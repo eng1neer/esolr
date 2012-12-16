@@ -159,10 +159,6 @@ commit() ->
 optimize() ->
 	gen_server:call(esolr_client,optimize,infinity).
 
-% @doc  stop the esolr process
-stop() ->
-	gen_server:call(esolr_client,stop,infinity).
-
 % @doc  sets the autocommit behavior of the library. 
 %
 %       {time,N} to do an automatic commit every N miliseconds, if there are uncommited updates <br/>
